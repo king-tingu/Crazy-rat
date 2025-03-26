@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, filters
 import requests
 
 # Telegram Bot Token
-TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+TELEGRAM_BOT_TOKEN = "7557926778:AAH74UZc7JB5KSa0tJWRjqlBDlFDeEruog8"
 MIDDLEWARE_URL = "https://your-render-app.onrender.com/command"
 
 def start(update, context):
