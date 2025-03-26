@@ -23,10 +23,8 @@ def notify_telegram(message):
     except Exception as e:
         print(f"Failed to send notification: {e}")
 
-# Notify when the middleware starts successfully
-@app.before_first_request
-def startup_notification():
-    notify_telegram("🚀 Middleware is up and running!")
+# Notify when middleware starts
+notify_telegram("🚀 Middleware is up and running!")
 
 # Route to handle incoming payload connections
 @app.route('/payload', methods=['POST'])
@@ -50,7 +48,6 @@ def send_command():
         print(f"Received Command: {command}")
 
         # Simulated forwarding to payload (replace with actual logic)
-        # You can forward the command to the payload device here.
         notify_telegram(f"📤 Command sent to payload: {command}")
         return f"Command '{command}' processed successfully", 200
     except Exception as e:
